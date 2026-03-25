@@ -1,2 +1,5 @@
 #!/bin/bash
-syft . -o table
+set -euo pipefail
+
+syft . -o spdx-json > sbom.spdx.json
+echo "SBOM generated at sbom.spdx.json"
