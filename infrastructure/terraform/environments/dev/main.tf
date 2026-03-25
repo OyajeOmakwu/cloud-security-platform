@@ -17,3 +17,40 @@ module "secure_vpc" {
     ManagedBy   = "terraform"
   }
 }
+
+module "iam_baseline" {
+  source = "../../modules/iam-baseline"
+
+  name = "dev"
+
+  tags = {
+    Environment = "dev"
+    Project     = "cloud-security-platform"
+    ManagedBy   = "terraform"
+  }
+}
+
+module "logging_monitoring" {
+  source = "../../modules/logging-monitoring"
+
+  name                   = "dev"
+  cloudtrail_bucket_name = "oyaje-cloud-security-platform-dev-cloudtrail-logs"
+
+  tags = {
+    Environment = "dev"
+    Project     = "cloud-security-platform"
+    ManagedBy   = "terraform"
+  }
+}
+
+module "guardrails" {
+  source = "../../modules/guardrails"
+
+  name = "dev"
+
+  tags = {
+    Environment = "dev"
+    Project     = "cloud-security-platform"
+    ManagedBy   = "terraform"
+  }
+}
