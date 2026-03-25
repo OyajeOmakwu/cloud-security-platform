@@ -1,15 +1,19 @@
 output "vpc_id" {
-  value = aws_vpc.this.id
+  description = "ID of the VPC"
+  value       = aws_vpc.this.id
 }
 
 output "public_subnet_ids" {
-  value = aws_subnet.public[*].id
+  description = "IDs of public subnets"
+  value       = aws_subnet.public[*].id
 }
 
 output "private_subnet_ids" {
-  value = aws_subnet.private[*].id
+  description = "IDs of private subnets"
+  value       = aws_subnet.private[*].id
 }
 
 output "flow_log_group_name" {
-  value = aws_cloudwatch_log_group.flow_logs.name
+  description = "CloudWatch log group name for VPC flow logs"
+  value       = aws_cloudwatch_log_group.flow_logs.name
 }
