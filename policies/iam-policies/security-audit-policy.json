@@ -1,0 +1,22 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "SecurityAuditReadOnly",
+        "Effect": "Allow",
+        "Action": [
+          "ec2:Describe*",
+          "iam:Get*",
+          "iam:List*",
+          "s3:Get*",
+          "s3:List*",
+          "cloudtrail:Get*",
+          "cloudtrail:List*",
+          "guardduty:Get*",
+          "guardduty:List*",
+          "securityhub:Get*"
+        ],
+        "Resource": "*"
+      }
+    ]
+  }
