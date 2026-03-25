@@ -1,0 +1,20 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "InvestigateAndContain",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:Describe*",
+        "iam:Get*",
+        "iam:List*",
+        "cloudtrail:LookupEvents",
+        "guardduty:Get*",
+        "guardduty:List*",
+        "securityhub:Get*",
+        "securityhub:BatchUpdateFindings"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
