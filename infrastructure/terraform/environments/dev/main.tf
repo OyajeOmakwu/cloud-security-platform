@@ -54,3 +54,15 @@ module "guardrails" {
     ManagedBy   = "terraform"
   }
 }
+
+module "detection_response" {
+  source = "../../modules/detection-response"
+
+  name = "dev"
+
+  tags = {
+    Environment = "dev"
+    Project     = "cloud-security-platform"
+    ManagedBy   = "terraform"
+  }
+}
