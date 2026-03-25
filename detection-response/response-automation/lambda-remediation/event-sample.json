@@ -1,0 +1,25 @@
+{
+  "version": "0",
+  "id": "11111111-2222-3333-4444-555555555555",
+  "detail-type": "GuardDuty Finding",
+  "source": "aws.guardduty",
+  "account": "123456789012",
+  "time": "2026-03-25T12:00:00Z",
+  "region": "ca-central-1",
+  "resources": [],
+  "detail": {
+    "accountId": "123456789012",
+    "region": "ca-central-1",
+    "type": "UnauthorizedAccess:IAMUser/ConsoleLogin",
+    "severity": 8,
+    "title": "Suspicious console login detected",
+    "description": "An anomalous IAM console login was detected.",
+    "resource": {
+      "resourceType": "AccessKey",
+      "accessKeyDetails": {
+        "principalId": "AIDEXAMPLE12345",
+        "userName": "example-user"
+      }
+    }
+  }
+}
