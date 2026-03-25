@@ -1,6 +1,8 @@
 # Threat Model
 
-## Key assets
+This document outlines key assets, likely threats, and example mitigations for the cloud security platform.
+
+## Key Assets
 
 - IAM identities
 - Terraform state and infrastructure definitions
@@ -9,22 +11,30 @@
 - Kubernetes workloads
 - CI/CD pipelines
 
-## Example threats
+## Example Threats
 
 ### Spoofing
 Compromised IAM credentials used to impersonate legitimate users.
 
 ### Tampering
-Unauthorized modification of infrastructure code or bucket policies.
+Unauthorized modification of infrastructure code or cloud resource policies.
 
 ### Repudiation
 Insufficient logging prevents attribution of sensitive actions.
 
 ### Information Disclosure
-Misconfigured storage or secrets exposure reveals sensitive data.
+Misconfigured storage, secrets exposure, or weak access controls reveal sensitive data.
 
 ### Denial of Service
-Critical workloads or pipelines are disrupted by malicious activity.
+Critical workloads or delivery pipelines are disrupted by malicious or accidental actions.
 
 ### Elevation of Privilege
-Overly broad IAM permissions allow unintended administrative access.
+Excessive IAM permissions allow broader access than intended.
+
+## Mitigation Themes
+
+- least-privilege IAM
+- centralized logging
+- preventive policy controls
+- automated detection and response
+- secure-by-default infrastructure provisioning
