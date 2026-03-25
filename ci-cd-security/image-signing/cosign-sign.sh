@@ -1,2 +1,6 @@
 #!/bin/bash
-cosign sign my-image:latest
+set -euo pipefail
+
+IMAGE_NAME="${1:-my-image:latest}"
+
+cosign sign "${IMAGE_NAME}"
