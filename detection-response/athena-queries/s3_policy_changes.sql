@@ -1,3 +1,9 @@
-SELECT eventtime, useridentity.arn, requestparameters
+SELECT
+  eventtime,
+  useridentity.arn AS principal_arn,
+  sourceipaddress,
+  eventname,
+  requestparameters
 FROM cloudtrail_logs
-WHERE eventname = 'PutBucketPolicy';
+WHERE eventname IN ('PutBucketPolicy', 'PutBucketAcl', 'PutBucketPublicAccessBlock')
+ORDER BY eventtime DESC;
