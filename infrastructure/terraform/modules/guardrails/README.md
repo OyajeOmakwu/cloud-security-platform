@@ -1,18 +1,20 @@
 # Guardrails Module
 
-This Terraform module is intended to define preventive security controls and secure defaults for cloud infrastructure.
+This Terraform module enables preventive security guardrails at the AWS account and platform level.
 
-## Planned Scope
+## Includes
 
-- baseline encryption controls
-- public access restrictions
-- tagging standards
-- policy enforcement support
-- reusable security defaults for future modules
+- EBS encryption by default
+- S3 account-level public access block
+- lockdown of the default security group in the default VPC
 
 ## Security Goals
 
-- reduce the likelihood of insecure cloud deployments
-- move security controls earlier into infrastructure provisioning
-- standardize safe configuration across environments
-- minimize reliance on manual review
+- reduce insecure defaults at the account level
+- prevent accidental public exposure of S3 resources
+- ensure block storage is encrypted by default
+- minimize risk from permissive default networking behavior
+
+## Why It Matters
+
+Preventive controls are strongest when they are enforced automatically and applied broadly. This module represents the guardrail layer of the cloud security platform.
