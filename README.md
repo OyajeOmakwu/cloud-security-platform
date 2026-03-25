@@ -1,1 +1,1 @@
-# cloud-security-platform
+# Cloud Security Platform
