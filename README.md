@@ -2,14 +2,22 @@
 
 Secure-by-default cloud security platform demonstrating Terraform guardrails, cloud detection and response, Kubernetes policy enforcement, and CI/CD supply chain security.
 
-![Architecture](architecture/architecture.png)
-
 ## Highlights
 - Terraform-based secure infrastructure patterns
 - AWS detection and response workflows
 - Kubernetes policy enforcement with Kyverno/OPA
 - CI/CD security with scanning, SBOM, and signing
-- Developer-friendly secure-by-default controls
+- Developer-friendly secure-by-default control
+
+![Architecture](architecture/architecture.png)
+
+## How It Works
+
+1. Infrastructure is provisioned through Terraform modules with embedded security guardrails
+2. CI/CD pipelines validate code, IaC, dependencies, and container images
+3. Kubernetes admission policies enforce runtime security controls
+4. AWS detection and response workflows monitor activity and trigger automated response actions
+5. Logs, metrics, and alerts improve incident visibility and readiness
 
 ## Objectives
 
