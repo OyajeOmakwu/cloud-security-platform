@@ -35,6 +35,13 @@ Secure-by-default cloud security platform demonstrating Terraform guardrails, cl
 - Kyverno / OPA policy enforcement
 - GitHub Actions supply chain security pipeline
 
+## Design Decisions
+
+- Terraform was used to standardize secure infrastructure patterns and reduce configuration drift
+- AWS-native detection services were used to demonstrate practical cloud monitoring and response workflows
+- Kubernetes policy enforcement was added to shift runtime controls left into platform defaults
+- CI/CD supply chain controls were included to reduce the risk of vulnerable or unsigned artifacts reaching deployment
+
 ## Repository Structure
 
 - `architecture/` — threat model and diagrams
