@@ -1,7 +1,5 @@
 # Cloud Security Platform
 
-👉 ADD BADGES HERE 👇
-
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Terraform](https://img.shields.io/badge/IaC-Terraform-623CE4)
 ![AWS](https://img.shields.io/badge/cloud-AWS-orange)
