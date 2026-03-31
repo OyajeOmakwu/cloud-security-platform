@@ -71,3 +71,7 @@ This project demonstrates:
 - improved incident readiness through automated detection and response
 - repeatable infrastructure deployment through Terraform
 - security enablement that helps developers ship safely and quickly
+
+## Why This Project Matters
+
+This project demonstrates how cloud security can be engineered as part of the platform itself through automation, preventative controls, detection and response, and developer enablement rather than ticket-driven security work.
