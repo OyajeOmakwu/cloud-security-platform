@@ -1,6 +1,15 @@
 # Cloud Security Platform
 
-A portfolio project demonstrating secure-by-default cloud architecture, cloud detection and response, policy-as-code, and developer-friendly security controls using AWS, Terraform, Kubernetes, and CI/CD security tooling.
+Secure-by-default cloud security platform demonstrating Terraform guardrails, cloud detection and response, Kubernetes policy enforcement, and CI/CD supply chain security.
+
+![Architecture](architecture/architecture.png)
+
+## Highlights
+- Terraform-based secure infrastructure patterns
+- AWS detection and response workflows
+- Kubernetes policy enforcement with Kyverno/OPA
+- CI/CD security with scanning, SBOM, and signing
+- Developer-friendly secure-by-default controls
 
 ## Objectives
 
