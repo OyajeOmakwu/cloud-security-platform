@@ -44,13 +44,13 @@ Secure-by-default cloud security platform demonstrating Terraform guardrails, cl
 
 ## Repository Structure
 
-- `architecture/` — threat model and diagrams
-- `infrastructure/terraform/` — reusable Terraform modules and environments
-- `detection-response/` — security monitoring and automated response
-- `policies/` — preventive controls using policy-as-code
-- `ci-cd-security/` — supply chain security controls
-- `platform-security/` — Kubernetes, Istio, and Vault examples
-- `docs/` — security design decisions and developer enablement documentation
+- `architecture/` diagrams, threat models, and architecture notes
+- `infrastructure/terraform/` reusable infrastructure definitions
+- `detection-response/` monitoring, alerting, and automated response workflows
+- `platform-security/` secure-by-default platform controls
+- `policies/` policy-as-code definitions
+- `ci-cd-security/` supply chain and pipeline security patterns
+- `docs/` supporting documentation and screenshots
 
 ## Example Outputs
 
