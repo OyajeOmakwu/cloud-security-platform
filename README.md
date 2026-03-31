@@ -16,7 +16,7 @@ Secure-by-default cloud security platform demonstrating Terraform guardrails, cl
 - CI/CD security with scanning, SBOM, and signing
 - Developer-friendly secure-by-default control
 
-![Architecture]([architecture/architecture.png](https://github.com/OyajeOmakwu/cloud-security-platform/blob/main/architecture/diagrams/Cloud-Security-Platform%20Diagram.drawio.png)
+architecture/diagrams/Cloud-Security-Platform Diagram.drawio.png
 
 ## How It Works
 
