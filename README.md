@@ -45,6 +45,17 @@ Secure-by-default cloud security platform demonstrating Terraform guardrails, cl
 - `platform-security/` — Kubernetes, Istio, and Vault examples
 - `docs/` — security design decisions and developer enablement documentation
 
+## Example Outputs
+
+### CI/CD Security Checks
+![CI Checks](docs/screenshots/ci-checks.png)
+
+### Detection Findings
+![Findings](docs/screenshots/findings.png)
+
+### Policy Enforcement
+![Policy Enforcement](docs/screenshots/policy-enforcement.png)
+
 ## Outcomes
 
 This project demonstrates:
