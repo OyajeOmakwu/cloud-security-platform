@@ -1,5 +1,12 @@
 # Cloud Security Platform
 
+👉 ADD BADGES HERE 👇
+
+![License](https://img.shields.io/badge/license-MIT-green)
+![Terraform](https://img.shields.io/badge/IaC-Terraform-623CE4)
+![AWS](https://img.shields.io/badge/cloud-AWS-orange)
+![Kubernetes](https://img.shields.io/badge/platform-Kubernetes-326CE5)
+
 Secure-by-default cloud security platform demonstrating Terraform guardrails, cloud detection and response, Kubernetes policy enforcement, and CI/CD supply chain security.
 
 ## Highlights
